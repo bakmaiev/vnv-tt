@@ -1,14 +1,38 @@
-import React from "react";
+import React, { useEffect, useRef } from "react";
 import Button from "../Button/Button";
-import { StyledHero, StyledTitle } from "./Hero.styled";
+import {
+  StyledContent,
+  StyledGradientOverlay,
+  StyledHero,
+  StyledHeroBg,
+  StyledQuote,
+  StyledTitle,
+  StyledVideoBg,
+} from "./Hero.styled";
+import Video from "../../videos/hero.mp4";
 
 const Hero = () => {
+  const videoRef = useRef(null);
+
+  useEffect(() => {
+    videoRef.current.play();
+  }, []);
+
   return (
     <StyledHero>
-      <StyledTitle>
-        Easy, quality, IT - winning solutions for your business
-      </StyledTitle>
-      <Button />
+      <StyledHeroBg>
+        <StyledVideoBg ref={videoRef} loop muted>
+          <source src={Video} type="video/mp4" />
+        </StyledVideoBg>
+        <StyledGradientOverlay />
+      </StyledHeroBg>
+      <StyledContent>
+        <StyledTitle>VNV SOLUTIONS</StyledTitle>
+        <StyledQuote>
+          Easy, quality, IT - winning solutions for your business
+        </StyledQuote>
+        <Button>Замовити</Button>
+      </StyledContent>
     </StyledHero>
   );
 };
