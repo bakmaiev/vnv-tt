@@ -1,25 +1,42 @@
 import React from "react";
-import { StyledHeader, StyledImgWrapp } from "./Header.styled";
+import {
+  StyledHeader,
+  StyledLogoWrapp,
+  StyledMobileIcon,
+  StyledNav,
+  StyledNavItem,
+  StyledNavLink,
+  StyledNavList,
+} from "./Header.styled";
+import { FaBars } from "react-icons/fa";
 
 const Header = () => {
   return (
     <StyledHeader>
-      <StyledImgWrapp>
-        <img src={require("../../images/vnv-logo.png")} alt="Vnv-solutions" />
-      </StyledImgWrapp>
-      <nav>
-        <ul>
-          <li>
-            <a href="/">Послуги</a>
-          </li>
-          <li>
-            <a href="/">Проєкти</a>
-          </li>
-          <li>
-            <a href="/">FAQ</a>
-          </li>
-        </ul>
-      </nav>
+      <StyledNav>
+        <StyledLogoWrapp>
+          <StyledNavLink to="/">
+            <img
+              src={require("../../images/vnv-logo.png")}
+              alt="Vnv-solutions"
+            />
+          </StyledNavLink>
+        </StyledLogoWrapp>
+        <StyledMobileIcon>
+          <FaBars size={32} />
+        </StyledMobileIcon>
+        <StyledNavList>
+          <StyledNavItem>
+            <StyledNavLink to="services">Послуги</StyledNavLink>
+          </StyledNavItem>
+          <StyledNavItem>
+            <StyledNavLink to="projects">Проєкти</StyledNavLink>
+          </StyledNavItem>
+          <StyledNavItem>
+            <StyledNavLink to="faq">FAQ</StyledNavLink>
+          </StyledNavItem>
+        </StyledNavList>
+      </StyledNav>
     </StyledHeader>
   );
 };
