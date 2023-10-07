@@ -1,11 +1,11 @@
 import { BrowserRouter } from "react-router-dom";
 import Footer from "../Footer/Footer";
-import Hero from "../Hero/Hero";
 import Services from "../Services/Services";
 import Home from "../../pages/Home";
 import Sidebar from "../Sidebar/Sidebar";
 import Header from "../Header/Header";
 import { useState } from "react";
+import Advantages from "../Advantages/Advantages";
 
 function App() {
   const [isOpen, setIsOpen] = useState(false);
@@ -19,7 +19,8 @@ function App() {
       <Header toggle={toggleSidebar} />
       <main>
         <Home />
-        <Services />
+        <Advantages />
+        {/* <Services /> */}
       </main>
       <Footer />
     </BrowserRouter>

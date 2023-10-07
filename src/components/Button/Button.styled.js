@@ -10,6 +10,9 @@ export const StyledButton = styled.button`
   position: relative;
   overflow: hidden;
   border: 1px solid #a1a4af;
+  font-family: "Nunito Sans", sans-serif;
+  font-size: 15px;
+  margin: 0 auto 32px;
 
   &:hover,
   &:focus {
