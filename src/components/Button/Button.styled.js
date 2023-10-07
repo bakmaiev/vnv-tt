@@ -11,8 +11,9 @@ export const StyledButton = styled.button`
   overflow: hidden;
   border: 1px solid #a1a4af;
 
-  &:hover {
-    box-shadow: 1px 1px 25px 10px #a1a4af80;
+  &:hover,
+  &:focus {
+    box-shadow: 1px 1px 25px 5px #a1a4af20;
   }
 
   &:before {
@@ -23,10 +24,11 @@ export const StyledButton = styled.button`
     width: 100%;
     height: 100%;
     background: linear-gradient(120deg, transparent, #a1a4af80, transparent);
-    transition: all 650ms;
+    transition: all 0.5s ease-in-out;
   }
 
-  &:hover:before {
+  &:hover:before,
+  &:focus:before {
     left: 100%;
   }
 `;

@@ -1,11 +1,13 @@
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import styled from "styled-components";
+import { FaBars } from "react-icons/fa";
 
 export const StyledHeader = styled.header`
   box-sizing: border-box;
   position: sticky;
   top: 0;
   z-index: 10;
+  margin-top: -100px;
   height: 100px;
   background-color: #000;
   border-bottom: 1px solid #a1a4af20;
@@ -30,9 +32,26 @@ export const StyledNavList = styled.ul`
   }
 `;
 
-export const StyledNavItem = styled.li``;
+export const StyledNavItem = styled.li`
+  transition: all 0.25s ease-in-out;
 
-export const StyledNavLink = styled(Link)``;
+  &:hover,
+  &:focus {
+    color: #a1a4af;
+  }
+`;
+
+export const StyledNavLink = styled(NavLink)``;
+
+export const StyledIcon = styled(FaBars)`
+  color: #fff;
+  transition: all 0.25s ease-in-out;
+  &:hover,
+  &:focus {
+    color: #a1a4af;
+    scale: 0.9;
+  }
+`;
 
 export const StyledMobileIcon = styled.div`
   display: none;

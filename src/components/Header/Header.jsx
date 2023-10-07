@@ -1,6 +1,7 @@
 import React from "react";
 import {
   StyledHeader,
+  StyledIcon,
   StyledLogoWrapp,
   StyledMobileIcon,
   StyledNav,
@@ -8,9 +9,8 @@ import {
   StyledNavLink,
   StyledNavList,
 } from "./Header.styled";
-import { FaBars } from "react-icons/fa";
 
-const Header = () => {
+const Header = ({ toggle }) => {
   return (
     <StyledHeader>
       <StyledNav>
@@ -22,8 +22,8 @@ const Header = () => {
             />
           </StyledNavLink>
         </StyledLogoWrapp>
-        <StyledMobileIcon>
-          <FaBars size={32} />
+        <StyledMobileIcon onClick={toggle}>
+          <StyledIcon size={32} />
         </StyledMobileIcon>
         <StyledNavList>
           <StyledNavItem>

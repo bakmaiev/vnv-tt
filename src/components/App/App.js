@@ -1,15 +1,24 @@
 import { BrowserRouter } from "react-router-dom";
 import Footer from "../Footer/Footer";
-import Header from "../Header/Header";
 import Hero from "../Hero/Hero";
 import Services from "../Services/Services";
+import Home from "../../pages/Home";
+import Sidebar from "../Sidebar/Sidebar";
+import Header from "../Header/Header";
+import { useState } from "react";
 
 function App() {
+  const [isOpen, setIsOpen] = useState(false);
+  const toggleSidebar = () => {
+    setIsOpen(!isOpen);
+  };
+
   return (
     <BrowserRouter>
-      <Header />
+      <Sidebar isOpen={isOpen} toggle={toggleSidebar} />
+      <Header toggle={toggleSidebar} />
       <main>
-        <Hero />
+        <Home />
         <Services />
       </main>
       <Footer />
