@@ -1,6 +1,9 @@
 import styled from "styled-components";
 
 export const StyledAdvantages = styled.section`
+  max-width: 1200px;
+  padding: 0 16px;
+  margin: 0 auto;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -57,22 +60,15 @@ export const StyledAdvantagesCard = styled.li`
   &:hover,
   &:focus {
     transform: scale(1.02);
-    cursor: pointer;
   }
 
   @media screen and (min-width: 768px) {
     width: calc((100% - 32px) / 2);
-    height: 220px;
+    height: 300px;
   }
 
   @media screen and (min-width: 1024px) {
     width: calc((100% - 64px) / 3);
-    height: 220px;
+    height: 250px;
   }
 `;
-
-// export const StyledIcon = styled.img`
-//   width: 160px;
-//   height: 160px;
-//   margin-bottom: 10px;
-// `;

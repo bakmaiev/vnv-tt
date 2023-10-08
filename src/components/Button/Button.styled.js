@@ -1,7 +1,8 @@
 import styled from "styled-components";
 
 export const StyledButton = styled.button`
-  width: 250px;
+  width: 100%;
+  max-width: 250px;
   height: 50px;
   text-align: center;
   cursor: pointer;
@@ -11,7 +12,7 @@ export const StyledButton = styled.button`
   overflow: hidden;
   border: 1px solid #a1a4af;
   font-family: "Nunito Sans", sans-serif;
-  font-size: 15px;
+  font-size: 16px;
   margin: 0 auto 32px;
 
   &:hover,

@@ -6,6 +6,7 @@ import Sidebar from "../Sidebar/Sidebar";
 import Header from "../Header/Header";
 import { useState } from "react";
 import Advantages from "../Advantages/Advantages";
+import { StyledMain } from "./App.styled";
 
 function App() {
   const [isOpen, setIsOpen] = useState(false);
@@ -17,11 +18,11 @@ function App() {
     <BrowserRouter>
       <Sidebar isOpen={isOpen} toggle={toggleSidebar} />
       <Header toggle={toggleSidebar} />
-      <main>
+      <StyledMain>
         <Home />
         <Advantages />
-        {/* <Services /> */}
-      </main>
+        <Services />
+      </StyledMain>
       <Footer />
     </BrowserRouter>
   );
