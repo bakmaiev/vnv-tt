@@ -1,6 +1,6 @@
-import { NavLink } from "react-router-dom";
 import styled from "styled-components";
 import { FaBars } from "react-icons/fa";
+import { Link } from "react-scroll";
 
 export const StyledHeader = styled.header`
   box-sizing: border-box;
@@ -41,7 +41,9 @@ export const StyledNavItem = styled.li`
   }
 `;
 
-export const StyledNavLink = styled(NavLink)``;
+export const StyledNavLink = styled(Link)`
+  cursor: pointer;
+`;
 
 export const StyledIcon = styled(FaBars)`
   color: #fff;

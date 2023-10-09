@@ -19,7 +19,7 @@ const Hero = () => {
   }, []);
 
   return (
-    <StyledHero>
+    <StyledHero id="hero">
       <StyledHeroBg>
         <StyledVideoBg ref={videoRef} loop muted>
           <source src={Video} type="video/mp4" />

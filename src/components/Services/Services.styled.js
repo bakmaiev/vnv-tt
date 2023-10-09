@@ -45,7 +45,6 @@ export const StyledServicesMenu = styled.div`
 export const StyledServicesWrapp = styled.div`
   max-width: 1200px;
   width: -webkit-fill-available;
-  padding: 0 16px;
   margin: 0 auto;
 `;
 
@@ -98,7 +97,7 @@ export const StyledBtnService = styled.button`
 
 export const StyledServicesInfo = styled.div`
   max-width: 100%;
-  height: fit-content;
+  max-height: fit-content;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -108,6 +107,7 @@ export const StyledServicesInfo = styled.div`
 
   @media screen and (min-width: 1024px) {
     flex-direction: row;
+    height: 300px;
   }
 `;
 

@@ -15,7 +15,13 @@ const Header = ({ toggle }) => {
     <StyledHeader>
       <StyledNav>
         <StyledLogoWrapp>
-          <StyledNavLink to="/">
+          <StyledNavLink
+            to="root"
+            spy={true}
+            smooth={true}
+            offset={50}
+            duration={500}
+          >
             <img
               src={require("../../images/vnv-logo.png")}
               alt="Vnv-solutions"
@@ -27,13 +33,29 @@ const Header = ({ toggle }) => {
         </StyledMobileIcon>
         <StyledNavList>
           <StyledNavItem>
-            <StyledNavLink to="services">Послуги</StyledNavLink>
+            <StyledNavLink
+              to="services"
+              smooth={true}
+              offset={50}
+              duration={500}
+            >
+              Послуги
+            </StyledNavLink>
           </StyledNavItem>
           <StyledNavItem>
-            <StyledNavLink to="projects">Проєкти</StyledNavLink>
+            <StyledNavLink
+              to="projects"
+              smooth={true}
+              offset={50}
+              duration={500}
+            >
+              Проєкти
+            </StyledNavLink>
           </StyledNavItem>
           <StyledNavItem>
-            <StyledNavLink to="faq">FAQ</StyledNavLink>
+            <StyledNavLink to="faq" smooth={true} offset={50} duration={500}>
+              FAQ
+            </StyledNavLink>
           </StyledNavItem>
         </StyledNavList>
       </StyledNav>

@@ -71,7 +71,7 @@ const Services = () => {
   };
 
   return (
-    <StyledServices>
+    <StyledServices id="services">
       <StyledServicesWrapp>
         <StyledTitle>Послуги</StyledTitle>
         <StyledServicesMenu>

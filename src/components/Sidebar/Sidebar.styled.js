@@ -1,5 +1,5 @@
 import { FaTimes } from "react-icons/fa";
-import { NavLink } from "react-router-dom";
+import { Link } from "react-scroll";
 import styled from "styled-components";
 
 export const StyledSidebar = styled.aside`
@@ -14,8 +14,12 @@ export const StyledSidebar = styled.aside`
   justify-content: center;
   align-items: center;
   transition: 0.5s ease-in-out;
-  opacity: ${({ isOpen }) => (isOpen ? 1 : 0)};
-  top: ${({ isOpen }) => (isOpen ? "0" : "-100%")};
+  opacity: 0;
+  top: -100%;
+  &.active {
+    opacity: 1;
+    top: 0;
+  }
 `;
 
 export const StyledIcon = styled.div`
@@ -74,4 +78,6 @@ export const StyledNavList = styled.ul`
   gap: 64px;
 `;
 
-export const StyledNavLink = styled(NavLink)``;
+export const StyledNavLink = styled(Link)`
+  cursor: pointer;
+`;

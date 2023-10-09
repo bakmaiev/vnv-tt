@@ -9,17 +9,16 @@ import {
   StyledNavList,
   StyledSidebar,
 } from "./Sidebar.styled";
-// import { FaTimes } from "react-icons/fa";
 
 const Sidebar = ({ isOpen, toggle }) => {
   return (
-    <StyledSidebar isOpen={isOpen}>
+    <StyledSidebar className={isOpen ? "active" : ""}>
       <StyledIcon onClick={toggle}>
         <StyledCloseIcon size={32} />
       </StyledIcon>
       <StyledMenu>
         <StyledLogoWrapp>
-          <StyledNavLink to="/" onClick={toggle}>
+          <StyledNavLink to="root" onClick={toggle}>
             <img
               src={require("../../images/vnv-logo.png")}
               alt="Vnv-solutions"

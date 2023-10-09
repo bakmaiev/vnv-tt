@@ -6,7 +6,7 @@ export const StyledProjects = styled.section`
   flex-direction: column;
   justify-content: center;
   background-color: #fff;
-  //   padding: 16px;
+  padding-bottom: 32px;
 `;
 
 export const StyledTitleWrapp = styled.div`
@@ -15,10 +15,17 @@ export const StyledTitleWrapp = styled.div`
   margin: 0 auto;
 `;
 
-export const StyledInfoWrapp = styled.div`
+export const StyledInfoWrapp = styled.ul`
+  max-width: 1200px;
+  margin: 0 auto;
   & > :nth-child(2n) {
     background-color: #fff;
     color: #000;
+  }
+
+  @media screen and (min-width: 768px) {
+    display: flex;
+    justify-content: center;
   }
 `;
 
@@ -33,8 +40,9 @@ export const StyledTitle = styled.h2`
   }
 `;
 
-export const StyledProjectsInfo = styled.div`
-  max-width: 100%;
+export const StyledProjectsInfo = styled.li`
+  box-sizing: border-box;
+  width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -43,6 +51,12 @@ export const StyledProjectsInfo = styled.div`
   gap: 16px;
   background: #000;
   padding: 16px;
+
+  @media screen and (min-width: 768px) {
+    width: calc((100%) / 3);
+    display: flex;
+    justify-content: center;
+  }
 `;
 
 export const StyledSubTitle = styled.h3`
@@ -53,9 +67,13 @@ export const StyledSubTitle = styled.h3`
 export const StyledProjectsImg = styled.img`
   width: 100%;
   max-width: 1200px;
-  opacity: 0.6;
+  opacity: 0.3;
   height: 100px;
   object-fit: cover;
+
+  @media screen and (min-width: 768px) and (max-width: 1024px) {
+    height: 50px;
+  }
 `;
 
 export const StyledProjectsVideo = styled.video`
@@ -65,5 +83,8 @@ export const StyledProjectsVideo = styled.video`
   object-fit: cover;
   & > img {
     opacity: 0.5;
+  }
+  @media screen and (min-width: 768px) and (max-width: 1024px) {
+    height: 200px;
   }
 `;
