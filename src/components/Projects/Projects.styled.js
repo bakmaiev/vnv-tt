@@ -24,8 +24,13 @@ export const StyledInfoWrapp = styled.ul`
   }
 
   @media screen and (min-width: 768px) {
+    width: 768px;
     display: flex;
     justify-content: center;
+  }
+
+  @media screen and (min-width: 1024px) {
+    width: 1024px;
   }
 `;
 
@@ -35,6 +40,8 @@ export const StyledTitle = styled.h2`
   font-weight: bold;
   color: #000;
   margin: 16px;
+  border-bottom: 1px solid #a1a4af20;
+
   @media screen and (min-width: 1200px) {
     margin: 16px 0;
   }
@@ -53,7 +60,7 @@ export const StyledProjectsInfo = styled.li`
   padding: 16px;
 
   @media screen and (min-width: 768px) {
-    width: calc((100%) / 3);
+    width: calc(100% / 3);
     display: flex;
     justify-content: center;
   }
@@ -81,6 +88,7 @@ export const StyledProjectsVideo = styled.video`
   max-width: 1200px;
   height: 300px;
   object-fit: cover;
+  cursor: pointer;
   & > img {
     opacity: 0.5;
   }

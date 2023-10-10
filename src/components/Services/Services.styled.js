@@ -97,7 +97,7 @@ export const StyledBtnService = styled.button`
 
 export const StyledServicesInfo = styled.div`
   max-width: 100%;
-  max-height: fit-content;
+  height: fit-content;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -107,7 +107,6 @@ export const StyledServicesInfo = styled.div`
 
   @media screen and (min-width: 1024px) {
     flex-direction: row;
-    height: 300px;
   }
 `;
 
@@ -132,6 +131,7 @@ export const StyledTitle = styled.h2`
   font-weight: bold;
   color: #fff;
   margin-bottom: 16px;
+  border-bottom: 1px solid #a1a4af20;
 `;
 
 export const StyledSubTitle = styled.h3`

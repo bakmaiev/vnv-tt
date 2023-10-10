@@ -24,7 +24,7 @@ const projectsData = [
     video: require("../../videos/projects2.mp4"),
   },
   {
-    id: 2,
+    id: 3,
     title: "Delivery Service",
     image: require("../../images/projects3.jpg"),
     video: require("../../videos/projects3.mp4"),

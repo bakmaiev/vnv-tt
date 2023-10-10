@@ -7,7 +7,6 @@ export const StyledAdvantages = styled.section`
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding: 0 16px;
 `;
 
 export const StyledTitle = styled.h2`
@@ -16,6 +15,7 @@ export const StyledTitle = styled.h2`
   font-weight: bold;
   color: #fff;
   margin: 16px 0;
+  border-bottom: 1px solid #a1a4af20;
 `;
 
 export const StyledDescr = styled.p`
