@@ -77,7 +77,12 @@ const Services = () => {
         <StyledServicesMenu>
           {servicesData.map((service) => (
             <li key={service.id} onClick={() => handleServiceClick(service.id)}>
-              <StyledBtnService type="button">{service.title}</StyledBtnService>
+              <StyledBtnService
+                className={selectedService.id === service.id ? "active" : ""}
+                type="button"
+              >
+                {service.title}
+              </StyledBtnService>
             </li>
           ))}
         </StyledServicesMenu>

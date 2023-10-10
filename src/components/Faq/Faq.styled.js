@@ -38,6 +38,7 @@ export const StyledFaqWrapp = styled.div`
 `;
 
 export const StyledFaqCard = styled.li`
+  position: relative;
   box-sizing: border-box;
   width: 100%;
   background-color: #000;

@@ -18,19 +18,34 @@ export const StyledTitleWrapp = styled.div`
 export const StyledInfoWrapp = styled.ul`
   max-width: 1200px;
   margin: 0 auto;
+
   & > :nth-child(2n) {
     background-color: #fff;
     color: #000;
   }
 
   @media screen and (min-width: 768px) {
-    width: 768px;
     display: flex;
     justify-content: center;
+    gap: 16px;
+    flex-wrap: wrap;
+
+    & > :nth-child(2n) {
+      background-color: #000;
+      color: #fff;
+    }
   }
 
   @media screen and (min-width: 1024px) {
-    width: 1024px;
+    & > :nth-child(2n) {
+      background-color: #fff;
+      color: #000;
+    }
+
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    flex-wrap: nowrap;
   }
 `;
 
@@ -49,20 +64,21 @@ export const StyledTitle = styled.h2`
 
 export const StyledProjectsInfo = styled.li`
   box-sizing: border-box;
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  flex-wrap: wrap;
-  gap: 16px;
-  background: #000;
+  width: 100vw;
+  max-width: 768px;
   padding: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  background-color: #000;
+  cursor: default;
 
   @media screen and (min-width: 768px) {
-    width: calc(100% / 3);
-    display: flex;
-    justify-content: center;
+    width: calc((100vw - 16px) / 2);
+  }
+
+  @media screen and (min-width: 1024px) {
+    width: calc((100vw - 32px) / 3);
   }
 `;
 
@@ -73,26 +89,17 @@ export const StyledSubTitle = styled.h3`
 
 export const StyledProjectsImg = styled.img`
   width: 100%;
-  max-width: 1200px;
   opacity: 0.3;
   height: 100px;
   object-fit: cover;
-
-  @media screen and (min-width: 768px) and (max-width: 1024px) {
-    height: 50px;
-  }
 `;
 
 export const StyledProjectsVideo = styled.video`
   width: 100%;
-  max-width: 1200px;
   height: 300px;
   object-fit: cover;
   cursor: pointer;
   & > img {
     opacity: 0.5;
-  }
-  @media screen and (min-width: 768px) and (max-width: 1024px) {
-    height: 200px;
   }
 `;

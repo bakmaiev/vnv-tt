@@ -76,12 +76,7 @@ export const StyledBtnService = styled.button`
 
   &::before {
     opacity: 0;
-    background: linear-gradient(
-      39deg,
-      rgba(120, 137, 153, 0.106516106442577) 0%,
-      rgba(140, 150, 164, 0.10211834733893552) 26%,
-      rgba(161, 164, 175, 0.1211834733893552) 50%
-    );
+    background-color: #a1a4af20;
     transform: scale(0.1, 0.1);
   }
 
@@ -92,6 +87,10 @@ export const StyledBtnService = styled.button`
 
   @media screen and (min-width: 1200px) {
     width: calc((1200px - 96px) / 4);
+  }
+
+  &.active {
+    background-color: #a1a4af40;
   }
 `;
 
