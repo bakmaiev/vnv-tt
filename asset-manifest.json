@@ -1,0 +1,29 @@
+{
+  "files": {
+    "main.css": "/vnv-tt/static/css/main.ee7d7ac1.css",
+    "main.js": "/vnv-tt/static/js/main.bd44f2e4.js",
+    "static/media/hero.mp4": "/vnv-tt/static/media/hero.a2703484bb9eee7d0c2e.mp4",
+    "static/media/projects1.mp4": "/vnv-tt/static/media/projects1.3de6c88d62b9972c5d53.mp4",
+    "static/media/projects2.mp4": "/vnv-tt/static/media/projects2.203864c7a88151d96941.mp4",
+    "static/media/projects3.mp4": "/vnv-tt/static/media/projects3.884f575b351b1dfbdbde.mp4",
+    "static/media/projects1.jpg": "/vnv-tt/static/media/projects1.63f8e757e8083578cd02.jpg",
+    "static/media/projects3.jpg": "/vnv-tt/static/media/projects3.d24e228da6397b40d864.jpg",
+    "static/media/projects2.jpg": "/vnv-tt/static/media/projects2.54af8448d526e3a1863b.jpg",
+    "static/media/vnv-logo.png": "/vnv-tt/static/media/vnv-logo.0264c3f6a383e5d25137.png",
+    "static/media/service4.svg": "/vnv-tt/static/media/service4.f906371ab5b67e46476dde0b7eed18cc.svg",
+    "static/media/service5.svg": "/vnv-tt/static/media/service5.7ec1105c7415e717a5441ce4f8cdcbc3.svg",
+    "static/media/contacts.svg": "/vnv-tt/static/media/contacts.0749b046e9b9533c82f316b8e92fae2f.svg",
+    "static/media/service3.svg": "/vnv-tt/static/media/service3.20c6eb3d1fb2a20716cc9ddaf7e06d77.svg",
+    "static/media/service2.svg": "/vnv-tt/static/media/service2.e49906e04e41780ae367a65f47c42dc3.svg",
+    "static/media/service6.svg": "/vnv-tt/static/media/service6.9b1459d9a643434a22e0c8668fe8b04a.svg",
+    "static/media/brief.svg": "/vnv-tt/static/media/brief.5d45ed82c53c6c16dd31be48cb971531.svg",
+    "static/media/service1.svg": "/vnv-tt/static/media/service1.aceacb4a87e0792af6af403b787dd105.svg",
+    "index.html": "/vnv-tt/index.html",
+    "main.ee7d7ac1.css.map": "/vnv-tt/static/css/main.ee7d7ac1.css.map",
+    "main.bd44f2e4.js.map": "/vnv-tt/static/js/main.bd44f2e4.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.ee7d7ac1.css",
+    "static/js/main.bd44f2e4.js"
+  ]
+}
