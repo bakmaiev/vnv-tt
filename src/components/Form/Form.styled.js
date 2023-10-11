@@ -4,13 +4,14 @@ export const StyledForm = styled.form`
   max-width: 400px;
   display: flex;
   flex-direction: column;
-  margin: 0 auto;
+  margin: 16px auto 0;
   padding: 16px;
   border: 1px solid #a1a4af;
   border-radius: 6px;
 
   @media screen and (min-width: 768px) {
     width: 350px;
+    margin: 0 auto;
   }
 
   button {

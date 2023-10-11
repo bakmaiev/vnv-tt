@@ -10,6 +10,7 @@ import Contacts from "../Contacts/Contacts";
 import Brief from "../Brief/Brief";
 import Faq from "../Faq/Faq";
 import Hero from "../Hero/Hero";
+import LeadMagnet from "../LeadMagnet/LeadMagnet";
 
 function App() {
   const [isOpen, setIsOpen] = useState(false);
@@ -26,6 +27,7 @@ function App() {
         <Advantages />
         <Services />
         <Projects />
+        <LeadMagnet />
         <Brief />
         <Contacts />
         <Faq />

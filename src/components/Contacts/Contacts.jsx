@@ -5,19 +5,12 @@ import {
   StyledContactsBlock,
   StyledContactsInfo,
   StyledContactsWrapp,
-  StyledDescr,
-  StyledDescrLink,
-  StyledDescrList,
   StyledImgWrapp,
   StyledTitle,
 } from "./Contacts.styled";
-import {
-  FaMailBulk,
-  FaTelegramPlane,
-  FaViber,
-  FaWhatsapp,
-} from "react-icons/fa";
+
 import Form from "../Form/Form";
+import SocialList from "../SocialList/SocialList";
 
 const Contacts = () => {
   return (
@@ -33,40 +26,7 @@ const Contacts = () => {
                   alt="Контакти"
                 />
               </StyledImgWrapp>
-              <StyledDescrList>
-                <StyledDescr>
-                  <StyledDescrLink
-                    target="_blank"
-                    href="mailto:team@vnv.solutions"
-                  >
-                    <FaMailBulk size={30} />
-                  </StyledDescrLink>
-                </StyledDescr>
-                <StyledDescr>
-                  <StyledDescrLink
-                    target="_blank"
-                    href="https://t.me/vnv_solutions"
-                  >
-                    <FaTelegramPlane size={30} />
-                  </StyledDescrLink>
-                </StyledDescr>
-                <StyledDescr>
-                  <StyledDescrLink
-                    target="_blank"
-                    href="https://t.me/vnv_solutions"
-                  >
-                    <FaViber size={30} />
-                  </StyledDescrLink>
-                </StyledDescr>
-                <StyledDescr>
-                  <StyledDescrLink
-                    target="_blank"
-                    href="https://t.me/vnv_solutions"
-                  >
-                    <FaWhatsapp size={30} />
-                  </StyledDescrLink>
-                </StyledDescr>
-              </StyledDescrList>
+              <SocialList iconSize={30} />
             </StyledContactsInfo>
           </StyledContactsBlock>
           <Form />
