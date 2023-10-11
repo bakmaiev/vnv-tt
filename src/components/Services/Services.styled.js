@@ -62,6 +62,7 @@ export const StyledBtnService = styled.button`
   font-family: "Nunito Sans", sans-serif;
   font-size: 16px;
   transition: all 0.25s ease-in-out;
+  border--radius: 32px;
 
   &::before,
   &::after {
@@ -135,7 +136,7 @@ export const StyledTitle = styled.h2`
 
 export const StyledSubTitle = styled.h3`
   font-family: "Nunito Sans", sans-serif;
-  font-size: 24px;
+  font-size: 20px;
   font-weight: bold;
   color: #fff;
   text-align: center;
@@ -144,7 +145,6 @@ export const StyledSubTitle = styled.h3`
 export const StyledDescr = styled.p`
   font-family: "Nunito Sans", sans-serif;
   font-size: 16px;
-  font-weight: medium;
   text-align: center;
   color: #fff;
 `;

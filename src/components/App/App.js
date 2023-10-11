@@ -26,8 +26,8 @@ function App() {
         <Advantages />
         <Services />
         <Projects />
-        {/* <Contacts /> */}
         <Brief />
+        <Contacts />
         <Faq />
       </StyledMain>
       <Footer />

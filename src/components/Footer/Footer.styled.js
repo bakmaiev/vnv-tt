@@ -10,8 +10,11 @@ export const StyledFooter = styled.footer`
 `;
 
 export const StyledFooterContacts = styled.ul`
+  width: 100%;
   display: flex;
   gap: 16px;
+  justify-content: center;
+  flex-wrap: wrap;
 `;
 
 export const StyledIconWrapp = styled.li`

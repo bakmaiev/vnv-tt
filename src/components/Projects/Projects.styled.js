@@ -7,6 +7,10 @@ export const StyledProjects = styled.section`
   justify-content: center;
   background-color: #fff;
   padding-bottom: 32px;
+
+  @media screen and (min-width: 768px) {
+    padding-bottom: 16px;
+  }
 `;
 
 export const StyledTitleWrapp = styled.div`
@@ -75,6 +79,7 @@ export const StyledProjectsInfo = styled.li`
 
   @media screen and (min-width: 768px) {
     width: calc((100vw - 16px) / 2);
+    border-radius: 6px;
   }
 
   @media screen and (min-width: 1024px) {
@@ -92,13 +97,16 @@ export const StyledProjectsImg = styled.img`
   opacity: 0.3;
   height: 100px;
   object-fit: cover;
+  border-radius: 6px;
 `;
 
 export const StyledProjectsVideo = styled.video`
   width: 100%;
   height: 300px;
   object-fit: cover;
+  border-radius: 6px;
   cursor: pointer;
+
   & > img {
     opacity: 0.5;
   }

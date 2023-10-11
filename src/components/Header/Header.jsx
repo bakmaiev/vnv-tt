@@ -19,7 +19,7 @@ const Header = ({ toggle }) => {
             to="root"
             spy={true}
             smooth={true}
-            offset={50}
+            offset={-100}
             duration={500}
           >
             <img
@@ -36,7 +36,7 @@ const Header = ({ toggle }) => {
             <StyledNavLink
               to="services"
               smooth={true}
-              offset={50}
+              offset={-100}
               duration={500}
             >
               Послуги
@@ -46,7 +46,7 @@ const Header = ({ toggle }) => {
             <StyledNavLink
               to="projects"
               smooth={true}
-              offset={50}
+              offset={-100}
               duration={500}
             >
               Проєкти

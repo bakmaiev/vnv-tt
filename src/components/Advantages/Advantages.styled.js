@@ -52,6 +52,7 @@ export const StyledAdvantagesCard = styled.li`
   flex-direction: column;
   gap: 16px;
   border: 1px solid #a1a4af;
+  border-radius: 6px;
   max-height: 340px;
   padding: 16px;
   box-shadow: 1px 1px 25px 5px #a1a4af20;

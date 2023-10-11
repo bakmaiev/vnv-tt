@@ -47,6 +47,9 @@ export const StyledFaqCard = styled.li`
   flex-wrap: wrap;
   flex-direction: column;
   padding: 16px;
+  border-radius: 32px;
+  // border-top-left-radius: 32px;
+  // border-bottom-right-radius: 32px;
 
   @media screen and (min-width: 1024px) {
     width: calc((100% - 32px) / 2);
