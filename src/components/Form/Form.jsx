@@ -22,7 +22,9 @@ const Form = () => {
           control={control}
           defaultValue=""
           rules={{ required: true, pattern: /^[a-zA-Zа-яА-ЯіЇєЄ]+$/ }}
-          render={({ field }) => <input {...field} />}
+          render={({ field }) => (
+            <input {...field} placeholder="Введіть ім'я" />
+          )}
         />
       </div>
       <div>
@@ -55,7 +57,9 @@ const Form = () => {
               required: true,
               pattern: /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}$/i,
             }}
-            render={({ field }) => <input {...field} type="email" />}
+            render={({ field }) => (
+              <input {...field} type="email" placeholder="Введіть пошту" />
+            )}
           />
         </div>
       )}
@@ -70,6 +74,7 @@ const Form = () => {
             render={({ field }) => (
               <input
                 {...field}
+                placeholder="Введіть нікнейм"
                 type="text"
                 onChange={(e) => {
                   const value = e.target.value;
@@ -91,7 +96,13 @@ const Form = () => {
             control={control}
             defaultValue=""
             rules={{ required: true }}
-            render={({ field }) => <input {...field} type="tel" />}
+            render={({ field }) => (
+              <input
+                {...field}
+                placeholder="Введіть номер телефону"
+                type="tel"
+              />
+            )}
           />
         </div>
       )}
@@ -102,7 +113,13 @@ const Form = () => {
           control={control}
           defaultValue=""
           rules={{ required: true, maxLength: 150 }}
-          render={({ field }) => <textarea {...field} maxLength={150} />}
+          render={({ field }) => (
+            <textarea
+              {...field}
+              placeholder="Що вас цікавить?"
+              maxLength={150}
+            />
+          )}
         />
       </div>
       <Button type="submit">Надіслати</Button>
